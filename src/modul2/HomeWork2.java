@@ -21,11 +21,15 @@ public class HomeWork2 {
 
         System.out.print("Ваше хобби: ");
         String hobby = in.nextLine();
+        System.out.println();
 
         System.out.println("Имя: " + name);
         System.out.println("Город: " + city);
         System.out.println("Возраст: " + age);
         System.out.println("Хобби: " + hobby);
+        System.out.println();
+
+        System.out.println("Человек по имени " + name + " живет в городе " + city + ".\nЭтому человеку " + age + " лет и любит он заниматься " + hobby + ".");
 
     }
 
