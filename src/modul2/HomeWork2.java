@@ -17,7 +17,7 @@ public class HomeWork2 {
 
         System.out.print("Ваш возраст: ");
         int age = in.nextInt();
-        in.nextLine();
+        in.nextLine(); //метод nextInt() классe Scanner зчитує лише число і не повертає \n після Enterу, тому без додаткового in.nextLine() перескакує метод
 
         System.out.print("Ваше хобби: ");
         String hobby = in.nextLine();
@@ -30,6 +30,12 @@ public class HomeWork2 {
         System.out.println();
 
         System.out.println("Человек по имени " + name + " живет в городе " + city + ".\nЭтому человеку " + age + " лет и любит он заниматься " + hobby + ".");
+        System.out.println();
+
+        System.out.println(name + " - имя" );
+        System.out.println( city + " - город");
+        System.out.println(age + " - возраст");
+        System.out.println(hobby + " - хобби");
 
     }
 
