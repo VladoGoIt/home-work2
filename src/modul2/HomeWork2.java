@@ -8,18 +8,29 @@ import java.util.Scanner;
 public class HomeWork2 {
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
+        int age;
 
-        System.out.print("Ваше имя: ");
+        System.out.println("Ваше имя: ");
         String name = in.nextLine();
 
-        System.out.print("Ваш город: ");
+        System.out.println("Ваш город: ");
         String city  = in.nextLine();
 
-        System.out.print("Ваш возраст: ");
-        int age = in.nextInt();
-        in.nextLine(); //метод nextInt() классe Scanner зчитує лише число і не повертає \n після Enterу, тому без додаткового in.nextLine() перескакує метод
 
-        System.out.print("Ваше хобби: ");
+        while(true)
+        {
+            try {
+                System.out.println("Ваш возраст: ");;
+                age = in.nextInt();
+                in.nextLine();
+                break;
+            } catch (Exception e){
+                System.out.println("Возраст введен неправильно!");
+                in.nextLine();
+            }
+        }
+
+        System.out.println("Ваше хобби: ");
         String hobby = in.nextLine();
         System.out.println();
 
